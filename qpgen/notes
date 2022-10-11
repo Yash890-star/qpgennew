@@ -1,0 +1,17 @@
+
+<div className="">
+                <table className="table-auto border-solid border-black border-2 ">
+                    <thead className="border-solid border-black border-2">
+                        <tr className="">
+                            <th>SL.NO</th>
+                            <th>Questions</th>
+                            <th>CO</th>
+                            <th>BT</th>
+                            <th>Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {parta}
+                    </tbody>
+                </table>
+            </div>
