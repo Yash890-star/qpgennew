@@ -198,6 +198,28 @@ const QuestionPreview = () => {
                     </tbody>
                 </table>
             </div>
+            <div>
+            <table className="table-fixed border-solid border-black border-2 margin-auto width-own">
+                    <thead className="border-solid border-black border-2">
+                        <tr className="">
+                            <th className="width2-own">SL.NO</th>
+                            <th className="">Questions</th>
+                            <th className="width2-own">CO</th>
+                            <th className="width2-own">BT</th>
+                            <th className="width2-own">Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr className="border-solid border-black border-2 text-left">
+            <td className="pr-8 break-all border-r-2 border-black">1</td>
+            <td className="pr-8 break-all border-r-2 border-black"></td>
+            <td className="pr-8 break-all border-r-2 border-black"></td>
+            <td className="pr-8 break-all border-r-2 border-black"></td>
+            <td className="pr-8"></td>
+        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     );
 }

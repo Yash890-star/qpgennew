@@ -1,0 +1,10 @@
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.style-1{
+max-width: 100vw;
+}
+.style-2{
+width:30px
+}
