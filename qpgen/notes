@@ -15,3 +15,11 @@
                     </tbody>
                 </table>
             </div>
+
+
+            if (roman.hasOwnProperty(j['option'])) {
+                roman[j['option']] += 1
+            }
+            else {
+                roman[j['option']] = 1
+            }

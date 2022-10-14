@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/questionGenerate/example.js"  ],
+, "pages/exampl/example.js"  ],
   "exclude": [
     "node_modules"
   ]

@@ -1,7 +1,7 @@
 import '../../styles/Home.module.css'
 import Navbar from '../../components/navbar';
 const Semester = () => {
-  let semesters = [1, 2, 3, 4, 5, 6, 7, 8].map((sem) => (
+  let semesters = [1, 2, 3, 4].map((sem) => (
     <button className="border-2 rounded border-black w-20" key={sem.toString()}>{sem}</button>
   ))
   return (

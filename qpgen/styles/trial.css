@@ -3,8 +3,12 @@ table, th, td {
   border-collapse: collapse;
 }
 .style-1{
-max-width: 100vw;
+max-width: 702px;
 }
 .style-2{
 width:30px
+}
+
+.style-3{
+  font-family: "Times New Roman", Times, serif;
 }
