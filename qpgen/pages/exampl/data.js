@@ -85,7 +85,7 @@ const paper = () => {
                         "QPRef": [],
                         "MarkAllocated": 12
                     }
-                    
+
                 ],
                 [
                     {
@@ -106,7 +106,7 @@ const paper = () => {
                         "btl": "K6",
                         "co": "IDK.2",
                         "QPRef": [],
-                        "MarkAllocated": 6
+                        "MarkAllocated": 69
                     }
                 ]
             ],
@@ -200,6 +200,50 @@ const paper = () => {
         }
         console.log(roman)
     }
+    let courseObjective = {
+        1:{
+            cono:1,
+            text:"To understand the basics of algorithmic notion"
+        },
+        2:{
+            cono:2,
+            text:"To understand and apply the algorithm analysis techniques."
+        },
+        3:{
+            cono:3,
+            text:"To critically analyze the efficiency of alternative algorithmic solutions for the same"
+        },
+        4:{
+            cono:4,
+            text:"To understand different algorithm design techniques."
+        },
+        5:{
+            cono:5,
+            text:"	To understand the limitations of Algorithmic power."
+        },
+    }
+    let courseOutcomes = {
+        1:{
+            cono:'C123.1',
+            text:"To understand the basics of algorithmic notion"
+        },
+        2:{
+            cono:'C123.2',
+            text:"To understand and apply the algorithm analysis techniques."
+        },
+        3:{
+            cono:'C123.3',
+            text:"To critically analyze the efficiency of alternative algorithmic solutions for the same"
+        },
+        4:{
+            cono:'C123.4',
+            text:"To understand different algorithm design techniques."
+        },
+        5:{
+            cono:'C123.5',
+            text:"	To understand the limitations of Algorithmic power."
+        },
+    }
     function getArrayLength(i) {
         let arrlen = 0
         for (let j of i) {
@@ -281,6 +325,15 @@ const paper = () => {
         }
         roman = {}
     }
+    let cout = []
+    for(let i in courseOutcomes){
+        a = <tr>
+        <td className='text-center'>{courseOutcomes[i].cono}</td>
+        <td className='pl-2'>
+        {courseOutcomes[i].text}</td>
+    </tr>
+    cout.push(a)
+    }
     for (let i of partc) {
         let option = 'A'
         getRoman(i)
@@ -333,8 +386,72 @@ const paper = () => {
         }
         roman = {}
     }
+    let co = []
+    for(let i =1;i<=5;i++){
+        a = <tr>
+        <td className='text-center'>{courseObjective[i].cono}</td>
+        <td className='pl-2'>
+        {courseObjective[i].text}</td>
+    </tr>
+    co.push(a)
+    }
     return (
         <div className="flex flex-col style-1 mx-auto">
+            <table>
+                <tbody>
+                    <tr>
+                        <td colSpan="2" className='text-right pr-4'>RegNO.</td>
+                        <td colSpan="2"></td>
+                    </tr>
+                    <tr>
+                        <td className='text-center'>Logo</td>
+                        <td colSpan="3" className='text-center'>CHENNAI INSTITUTE OF TECHNOLOGY<br />
+                            Sarathy Nagar, Pudupedu, Chennai 600 069.<br />
+                            Internal Assessment -1 April 2022</td>
+                    </tr>
+                    <tr>
+                        <td className='pl-2'>Date/Time</td>
+                        <td className='pl-2'>Date/Time</td>
+                        <td className='pl-2'>Max Marks</td>
+                        <td className='pl-2'>50 Marks</td>
+
+                    </tr>
+                    <tr>
+                        <td className='pl-2'>Subject With Code</td>
+                        <td className='pl-2'>CS 8451 Design and Analysis of Algorithm</td>
+                        <td className='pl-2'>Time</td>
+                        <td className='pl-2'>1.30 Hours</td>
+                    </tr>
+                    <tr>
+                        <td className='pl-2'>Branch</td>
+                        <td className='pl-2'>CSE Set A</td>
+                        <td className='pl-2'>Year/Semester</td>
+                        <td className='pl-2'>II/IV</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SlNO.</th>
+                        <th>Course Objective</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {co}
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>SlNO.</th>
+                        <th>Course Outcomes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {cout}
+                </tbody>
+            </table>
             <table>
                 <tbody>
                     <tr>
