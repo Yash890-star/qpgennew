@@ -282,26 +282,27 @@ const paper = () => {
                 if (option === k['option']) {
                     if (k['roman'] === 'i') {
                         b = <tr>
-                            <td rowSpan={arrlen}>{k['number']}</td>
-                            <td rowSpan={roman[k['option']]}>{k['option']}</td>
-                            <td>{k['roman']}</td>
-                            <td>{k['question']}</td>
-                            <td>{k['co']}</td>
-                            <td>{k['btl']}</td>
-                            <td>{k['QPRef']}</td>
-                            <td>{k['MarkAllocated']}</td>
+                            <td className="style-2 text-center" rowSpan={arrlen+1}>{k['number']}</td>
+                            <td rowSpan={roman[k['option']]} className='style-2 text-center'>{k['option']}</td>
+                            <td className="style-2 text-center">{k['roman']}</td>
+                            <td className="pl-2">{k['question']}</td>
+                            <td className="px-2 text-center">{k['co']}</td> 
+                            <td className="px-2 text-center">{k['btl']}</td>
+                            <td className="px-2 text-center" >{k['QPRef']}</td>
+                            <td className="px-2 text-center">{k['MarkAllocated']}</td>
                         </tr>
                         store.push(b)
                         option = k['option']
                     }
                     else {
                         b = <tr>
-                            <td>{k['roman']}</td>
-                            <td>{k['question']}</td>
-                            <td>{k['co']}</td>
-                            <td>{k['btl']}</td>
-                            <td>{k['QPRef']}</td>
-                            <td>{k['MarkAllocated']}</td>
+                            
+                            <td className="text-center">{k['roman']}</td>
+                            <td className="pl-2">{k['question']}</td>
+                            <td className="text-center">{k['co']}</td>
+                            <td className="text-center">{k['btl']}</td>
+                            <td className="text-center">{k['QPRef']}</td>
+                            <td className="text-center">{k['MarkAllocated']}</td>
                         </tr>
                         store.push(b)
                         option = k['option']
@@ -309,14 +310,16 @@ const paper = () => {
                 }
                 else {
                     b = <tr>
-                        <td rowSpan={roman[k['option']]}>{k['option']}</td>
-                        <td>{k['roman']}</td>
-                        <td>{k['question']}</td>
-                        <td>{k['co']}</td>
-                        <td>{k['btl']}</td>
-                        <td>{k['QPRef']}</td>
-                        <td>{k['MarkAllocated']}</td>
+                        <td rowSpan={roman[k['option']]} className="text-center">{k['option']}</td>
+                        <td className="text-center">{k['roman']}</td>
+                        <td className="pl-2">{k['question']}</td>
+                        <td className="text-center">{k['co']}</td>
+                        <td className="text-center">{k['btl']}</td>
+                        <td className="text-center">{k['QPRef']}</td>
+                        <td className="text-center">{k['MarkAllocated']}</td>
                     </tr>
+                    let c = <tr><td className="text-center font-bold " colSpan="9">OR</td></tr>
+                    store.push(c)
                     store.push(b)
                     option = k['option']
                 }
@@ -343,12 +346,12 @@ const paper = () => {
                 if (option === k['option']) {
                     if (k['roman'] === 'i') {
                         b = <tr>
-                            <td rowSpan={arrlen}>{k['number']}</td>
-                            <td rowSpan={roman[k['option']]}>{k['option']}</td>
-                            <td>{k['roman']}</td>
+                            <td rowSpan={arrlen+1 } className="style-2" >{k['number']}</td>
+                            <td rowSpan={roman[k['option']] } className="style-2">{k['option']}</td>
+                            <td className="style-2">{k['roman']}</td>
                             <td>{k['question']}</td>
-                            <td>{k['co']}</td>
-                            <td>{k['btl']}</td>
+                            <td className="style-2">{k['co']}</td>
+                            <td className="style-2">{k['btl']}</td>
                             <td>{k['QPRef']}</td>
                             <td>{k['MarkAllocated']}</td>
                         </tr>
@@ -357,10 +360,10 @@ const paper = () => {
                     }
                     else {
                         b = <tr>
-                            <td>{k['roman']}</td>
+                            <td className="style-2">{k['roman']}</td>
                             <td>{k['question']}</td>
-                            <td>{k['co']}</td>
-                            <td>{k['btl']}</td>
+                            <td className="style-2">{k['co']}</td>
+                            <td className="style-2">{k['btl']}</td>
                             <td>{k['QPRef']}</td>
                             <td>{k['MarkAllocated']}</td>
                         </tr>
@@ -371,13 +374,15 @@ const paper = () => {
                 else {
                     b = <tr>
                         <td rowSpan={roman[k['option']]}>{k['option']}</td>
-                        <td>{k['roman']}</td>
+                        <td className="style-2">{k['roman']}</td>
                         <td>{k['question']}</td>
-                        <td>{k['co']}</td>
-                        <td>{k['btl']}</td>
-                        <td>{k['QPRef']}</td>
-                        <td>{k['MarkAllocated']}</td>
+                        <td className="style-2">{k['co']}</td>
+                        <td className="style-2">{k['btl']}</td>
+                        <td className="">{k['QPRef']}</td>
+                        <td className="">{k['MarkAllocated']}</td>
                     </tr>
+                    let c = <tr><td colSpan='9' className="font-bold text-center">OR</td></tr>
+                    storec.push(c)
                     storec.push(b)
                     option = k['option']
                 }
@@ -396,7 +401,7 @@ const paper = () => {
     co.push(a)
     }
     return (
-        <div className="flex flex-col style-1 mx-auto">
+        <div className="flex flex-col style-1 mx-auto text-sm style-3">
             <table>
                 <tbody>
                     <tr>
@@ -429,7 +434,7 @@ const paper = () => {
                         <td className='pl-2'>II/IV</td>
                     </tr>
                 </tbody>
-            </table>
+            </table><br/>
             <table>
                 <thead>
                     <tr>
@@ -440,7 +445,7 @@ const paper = () => {
                 <tbody>
                     {co}
                 </tbody>
-            </table>
+            </table><br/>
             <table>
                 <thead>
                     <tr>
@@ -451,7 +456,7 @@ const paper = () => {
                 <tbody>
                     {cout}
                 </tbody>
-            </table>
+            </table><br/>
             <table>
                 <tbody>
                     <tr>
@@ -460,41 +465,41 @@ const paper = () => {
                     </tr>
                     <tr>
                         <td className='text-center font-bold' colSpan='2'>Part A-(5x2=10 marks)<br />(Answer all the questions)</td>
-                        <td className='text-center font-bold'>CO</td>
-                        <td className='text-center font-bold'>BT<br />Level</td>
-                        <td className='text-center font-bold'>Univ<br />QP</td>
+                        <td className='text-center font-bold px-2'>CO</td>
+                        <td className='text-center font-bold px-2'>BT<br />Level</td>
+                        <td className='text-center font-bold px-2'>Univ<br />QP</td>
                     </tr>
                 </tbody>
                 <tbody>
                     {insrt}
                 </tbody>
-            </table>
+            </table><br/>
             <table>
                 <tbody>
                     <tr>
                         <td className='font-bold text-center' colSpan='4'>
                             Part B-(2x12=24 marks)<br />
                             (Answer all the questions)</td>
-                        <td className='font-bold text-center'>CO</td>
-                        <td className='font-bold style-2 text-center'>BT</td>
-                        <td className='text-center font-bold'>Univ<br />QP<br />reference</td>
-                        <td className='text-center font-bold'>Marks<br />Alloted</td>
+                        <td className='font-bold text-center px-2'>CO</td>
+                        <td className='font-bold style-2 text-center px-2'>BT</td>
+                        <td className='text-center font-bold px-2'>Univ<br />QP<br />reference</td>
+                        <td className='text-center font-bold px-2'>Marks<br />Alloted</td>
                     </tr>
                 </tbody>
                 <tbody>
                     {store}
                 </tbody>
-            </table>
+            </table><br/>
             <table>
                 <tbody>
                     <tr>
                         <td className='font-bold text-center' colSpan='4'>
                             Part C-(1x16=16 marks)<br />
                             (Answer all the questions)</td>
-                        <td className='font-bold text-center'>CO</td>
-                        <td className='font-bold style-2 text-center'>BT</td>
-                        <td className='text-center font-bold'>Univ<br />QP<br />reference</td>
-                        <td className='text-center font-bold'>Marks<br />Alloted</td>
+                        <td className='font-bold text-center px-2'>CO</td>
+                        <td className='font-bold style-2 text-center px-2'>BT</td>
+                        <td className='text-center font-bold px-2'>Univ<br />QP<br />reference</td>
+                        <td className='text-center font-bold px-2'>Marks<br />Alloted</td>
                     </tr>
                 </tbody>
                 <tbody>
