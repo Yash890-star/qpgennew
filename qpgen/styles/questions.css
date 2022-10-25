@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+body{
+    background-color: #0B141A;
+}
+.height2{
+    height: 70vh;
+}
+.heading-self{
+    font-size: 42px;
+    color:#00A884;
+    font-family:'Inter';
+    font-weight: 600;
+}
+.paragraph-self{
+    color:#8E8E8E;
+    font-size:22px;
+    font-family:'Inter';
+}
+.bgcolor{
+    background-color: #0B141A;
+}
+.container-self{
+    background-color: #202C33;
+    font-size: 24px;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-style: normal;
+    max-width: 500px;
+    word-wrap: break-word;
+}
+.sampl{
+    float: right;
+}
+.logo{
+    font-family: 'Quicksand';
+    font-weight: 700;
+    font-size: 40px;
+}
+.q-container{
+    width: 80vw;
+    max-width: 80vw;
+    font-family: 'Inter';
+    font-size: 22px
+}
+.mark{
+    color: #00A884;
+}

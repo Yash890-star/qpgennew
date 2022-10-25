@@ -1,0 +1,32 @@
+body{
+box-sizing:border-box;
+}
+
+.max-width{
+    max-width: 100px;
+}
+.style-1{
+    width: 80vw;
+}
+.min-width{
+    min-width:50px
+}
+.question-div{
+    position: relative;
+    width: 100%;
+}
+.question-span{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateX(10px) translatey(-13px);
+    background-color: #fff;
+
+}
+.mark-span{
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    transform: translateX(10px) translatey(-5px);
+    background-color: #fff;
+}
