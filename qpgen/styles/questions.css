@@ -47,3 +47,12 @@ body{
 .mark{
     color: #00A884;
 }
+.button-self{
+    word-wrap: break-word;
+}
+
+.self-width{
+    width: 400px;
+}
+.border-radius{
+}

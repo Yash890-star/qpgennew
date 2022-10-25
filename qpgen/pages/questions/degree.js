@@ -1,9 +1,10 @@
 import Container from "../../components/container"
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useRouter } from "next/router"
+import Heading from "../../components/heading";
 const degree = () => {
     let router = useRouter()
-    let a = ['Bachelor of Engineering (BE)sadddddddddddddddddddddddddddddddddddddddddddddd', 'Bachelor of Technology (BTech)']
+    let a = ['Bachelor of Engineering (BE)', 'Bachelor of Technology (BTech)']
     return ( 
         <div className="bgcolor text-white">
         <div className="flex ml-10 mt-10">
@@ -12,8 +13,7 @@ const degree = () => {
         </div>
         <div className='flex justify-center items-center mt-14 mb-14 text-white'>
         <div className='flex flex-col justify-center items-start h-full'>
-            <h1 className="heading-self">Degree</h1>
-            <p className="paragraph-self">Select degree from the list given below</p>
+            <Heading head='Degree' desc='Select Degree from the list given below'/>
             <Container data={a} route='semester'/>
         </div>
         </div>

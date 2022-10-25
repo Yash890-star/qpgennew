@@ -1,16 +1,19 @@
-import {BiChevronRight} from 'react-icons/bi';
+import {BsFillCaretRightFill} from 'react-icons/bs';
 import Link from 'next/link'
 const Container = (props) => {
     let ref = '/questions/'+props.route
     let a = props.data.map((val) => {
         return(
-            <Link href={ref}><button className='py-3 w-5/6 text-left' key={val}>{val}<span className='sampl text-md mt-2'><BiChevronRight className='sampl text-md mt-2'/></span></button></Link>
+            <div className='flex items-center'>
+                <Link href={ref}><button className='pl-3 text-left button-self basis-5/6 self-width my-3'>{val}</button></Link>
+                <BsFillCaretRightFill className='basis-auto ml-5'/>
+            </div>
         )
     })
     return ( 
-            <div className='flex flex-col mt-8 container-self grow items-center w-full rounded-md divide-y divide-slate-400'>
+                <div className='container-self rounded-md mt-10 divide-y divide-slate-400'>
                 {a}
-            </div>
+                </div>
      );
 }
  

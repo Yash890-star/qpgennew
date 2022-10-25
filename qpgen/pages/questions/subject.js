@@ -1,6 +1,7 @@
 import Container from "../../components/container"
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useRouter } from "next/router"
+import Heading from "../../components/heading";
 const subject = () => {
     const router = useRouter()
     let a = ['Data Science', 'Fundamentals of Data Science', 'Digital Processing', 'Object Oriented Programming', 'Discrete Mathematics']
@@ -12,8 +13,7 @@ const subject = () => {
         </div>
         <div className="flex justify-center items-center bgcolor mt-14 mb-14 text-white">
         <div className='flex flex-col justify-center items-start height'>
-            <h1 className="heading-self">Subject</h1>
-            <p className="paragraph-self">Select subject from the list given below</p>
+            <Heading head='Subject' desc='Select Subject from the list given below'/>
             <Container data={a} route='unit'/>
         </div>
         </div>

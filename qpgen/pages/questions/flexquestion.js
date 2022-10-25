@@ -12,7 +12,7 @@ const displayQuestions = () => {
             mark: "3-4"
         },
         3: {
-            question: 'question 2',
+            question: 'question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2question 2',
             mark: "3-4"
         },
         4: {
@@ -68,7 +68,7 @@ const displayQuestions = () => {
     let a = []
 
     for (let i in data) {
-        let b = <div className='flex py-3 border-b border-slate-500'>
+        let b = <div className='flex py-3 border-b border-slate-500 items-center'>
             <p className='basis-11/12'>{data[i].question}</p>
             <h1 className='basis-auto pl-5 text-right mark'>{data[i].mark}</h1>
         </div>

@@ -1,6 +1,7 @@
 import Container from "../../components/container"
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useRouter } from "next/router"
+import Heading from "../../components/heading";
 const unit = () => {
     const router = useRouter()
     let a = ['U1', 'U2', 'U3', 'U4', 'U5']
@@ -12,8 +13,7 @@ const unit = () => {
         </div>
         <div className='flex justify-center items-center bgcolor mt-14 mb-14 text-white'>
             <div className='flex flex-col justify-center items-start height'>
-                <h1 className='heading-self'>Unit</h1>
-                <p className='paragraph-self'>Select unit from the list given below</p>
+                <Heading head='Unit' desc='Select Unit from the list given below'/>
                 <Container data={a} route='flexquestion'/>
             </div>
         </div>

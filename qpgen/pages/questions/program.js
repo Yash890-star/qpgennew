@@ -1,6 +1,7 @@
 import Container from "../../components/container"
 import { AiOutlineArrowLeft } from 'react-icons/ai';
 import { useRouter } from "next/router"
+import Heading from "../../components/heading";
 const program = () => {
     const router = useRouter()
     let a = ['Under Graduate (UG)', 'Post Graduate (PG)']
@@ -12,8 +13,7 @@ const program = () => {
         </div> 
         <div className="flex justify-center items-center bgcolor mt-14 mb-14 text-white">
         <div className='flex flex-col justify-center items-start height'>
-            <h1 className="heading-self">Program</h1>
-            <p className="paragraph-self">Select program from the list given below</p>
+            <Heading head='Program' desc='Select Program from the list given below'/>
             <Container data={a} route='degree'/>
         </div>
         </div>

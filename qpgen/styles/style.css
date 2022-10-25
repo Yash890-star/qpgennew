@@ -6,8 +6,17 @@
     width:100px;
 }
 .width3-own{
-    width:300px;
+    width:400px;
+    height: 500px
 }
 .width4-own{
-    width:300px;
+    width:350px;
+}
+.full-height{
+    height:100vh;
+    background: #EBEBEB;
+}
+.fontstyle{
+    font-family: 'Inter';
+    font-size: 40px;
 }
