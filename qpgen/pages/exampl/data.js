@@ -5,8 +5,20 @@ const paper = () => {
                 [
                     {
                         "number": 1,
-                        "option": null,
-                        "roman": null,
+                        "option": "A",
+                        "roman": "i",
+                        "question": "(STACKS AND QUEUES) = 2 - 2 -- Heart good wall establish charge huge nothing teach court attention point join easy walk benefit occur door both.",
+                        "btl": "K4",
+                        "co": "IDK.2",
+                        "QPRef": [],
+                        "MarkAllocated": 2
+                    }
+                ],
+                [
+                    {
+                        "number": 1,
+                        "option": "B",
+                        "roman": "i",
                         "question": "(STACKS AND QUEUES) = 2 - 2 -- Heart good wall establish charge huge nothing teach court attention point join easy walk benefit occur door both.",
                         "btl": "K4",
                         "co": "IDK.2",
@@ -401,7 +413,7 @@ const paper = () => {
     co.push(a)
     }
     return (
-        <div className="flex flex-col style-1 mx-auto text-sm style-3">
+        <div className="flex flex-col bg-white style-1 mx-auto text-sm style-3">
             <table>
                 <tbody>
                     <tr>
